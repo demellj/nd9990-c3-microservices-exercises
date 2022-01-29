@@ -18,7 +18,7 @@ script:
   - docker-compose -f ./project/docker-compose-build.yaml build --parallel
   - docker tag udagram-api-feed demellj/udagram-api-feed:v1
   - docker tag udagram-api-user demellj/udagram-api-user:v1
-  - docker tag udagram-fontend demellj/udagram-fontend:v1
+  - docker tag udagram-frontend demellj/udagram-frontend:v1
   - docker tag reverseproxy demellj/reverseproxy:v1
 
 after_success:
@@ -26,4 +26,4 @@ after_success:
   - docker push demellj/udagram-api-user:v1
   - docker push demellj/udagram-api-feed:v1
   - docker push demellj/reverseproxy:v1
-  - docker push demellj/udagram-fontend:v1
+  - docker push demellj/udagram-frontend:v1
