@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+data:
+  AWS_REGION: 'ca-central-1'
+  AWS_PROFILE: 'default'
+  AWS_BUCKET: 'udagram-demellj-dev'
+  POSTGRES_HOST: 'udagramdb-demellj-dev.cjnsqtqtipaj.ca-central-1.rds.amazonaws.com'
+  POSTGRES_DB: 'udagramdbdev'
+  URL: 'http://localhost:8100'
